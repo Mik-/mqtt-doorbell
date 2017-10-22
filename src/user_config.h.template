@@ -1,0 +1,22 @@
+#ifndef USER_CONFIG_H
+#define USER_CONFIG_H
+
+#define WIFI_SSID1                  "<Your SSID>"
+#define WIFI_PASS1                  "<Your WPA2 key"
+#define WIFI_TIMEOUT                15
+
+#define MQTT_BROKER                 "<IP or host name of MQTT broker>"
+#define MQTT_CLIENT_ID              "DoorBell"
+#define MQTT_USER                   "<Your username for MQTT broker>"
+#define MQTT_PASSWORD               "<Your password for MQTT broker>"
+#define MQTT_TOPIC_BELL             "doorbell/ring"
+#define MQTT_PAYLOAD_RING_ON        "ON"
+#define MQTT_PAYLOAD_RING_OFF       "OFF"
+
+#define MQTT_TOPIC_BATTERY          "doorbell/battery"
+#define MQTT_PAYLOAD_BATTERY_OK     "OK"
+#define MQTT_PAYLOAD_BATTERY_LOW    "LOW"
+#define BATTERY_LOW_THRESHOLD       3.45
+#define MQTT_TOPIC_VOLTAGE          "doorbell/voltage"
+
+#endif
